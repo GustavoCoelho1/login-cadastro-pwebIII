@@ -1,0 +1,29 @@
+main {
+    background: url(../imagens/background.jpg) no-repeat center center;
+    background-size: cover;
+    background-position: center;
+    height: 92vh;
+}
+
+
+.creditos {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+
+    opacity: 0.5;
+    color: white;
+}
+
+.idx_msg {
+    text-align: center;
+    width: 700px;
+    position: absolute;
+    top: 50%;
+    left: calc(50% - 350px);
+    box-sizing: border-box;
+    font-weight: 600;
+    text-shadow: 0 4px 4px #00000099;
+    font-size: 40px;
+    color: rgb(241 188 230);
+}

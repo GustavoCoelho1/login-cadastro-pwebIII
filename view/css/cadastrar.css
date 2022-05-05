@@ -1,0 +1,175 @@
+.btn_voltar {
+    position: absolute;
+
+    top: 13px;
+    left: 18px;
+
+    color: var(--cor-second);
+    font-size: 20px;
+    cursor: pointer;
+
+    z-index: -1;
+
+    transition: 0.8s ease-in;
+}
+
+.cad_frm {
+    width: 100%;
+    height: 0;
+    opacity: 0;
+    z-index: -1;
+
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.8s ease-in;
+}
+
+.cad_frm div {
+    width: 100%;
+    margin-bottom: 5px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.cad_frm div div{
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px
+}
+
+.cad_frm .cad_frmRow1 div{
+    padding-top: 0;
+}
+
+
+.cad_frm .cad_frmRow1 div:nth-child(1){
+    width: 50%;
+}
+
+.cad_frm .cad_frmRow1 div:nth-child(2),
+.cad_frm .cad_frmRow1 div:nth-child(3)
+{
+    width: 25%;
+}
+
+.cad_frm .cad_frmRow2 div{
+    width: 33.33%;
+}
+
+.cad_frm .cad_frmRow3 div:nth-child(1),
+.cad_frm .cad_frmRow3 div:nth-child(2)
+{
+    width: 40%;
+    
+}
+
+.cad_frm .cad_frmRow3 div:nth-child(3)
+{
+    width: 20%;
+}
+
+.cad_frm div div label {
+    font-size: 1.0rem;
+    color: var(--cor-label);
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+}
+
+.cad_frm div div input[type="text"],
+.cad_frm div div input[type="date"]
+{
+    width: 100%;
+
+    text-align: center;
+    line-height: 1.8;
+    font-size: 0.95rem;
+    font-weight: 400;
+
+    padding: 0.4rem 0.75rem;
+    
+    border: none;
+    border-radius: 0.25rem;
+    box-shadow: 0px 2px 9px 0px #0000004d;
+
+    color: white;
+    letter-spacing: 3px;
+    background-color: var(--cor-primary);
+}
+
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+.cad_frm div div input[type="text"]::placeholder,
+.cad_frm div div input[type="number"]::placeholder
+{
+    text-align: center;
+    line-height: 1.5;
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: var(--cor-ph);
+    letter-spacing: 2px;
+}
+
+.cad_frm div div input[type="submit"],
+.cad_frm div div button
+{
+    width: 40%;
+
+    padding: 1rem;
+
+    background-color: var(--cor-second);
+    border: none;
+    border-radius: 15px;
+    color: white;
+
+    letter-spacing: 4px;
+    font-weight: 700;
+    box-shadow: 0px 2px 9px 0px #0000004d;
+
+    margin-bottom: 2px;
+}
+
+.cad_frm button {
+    margin-top: 28px;
+}
+
+.cad_msg {
+    width: 100%;
+    height: 0;
+    opacity: 0;
+    z-index: -1;
+
+    color: var(--cor-label);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.8s ease-in;
+}
+
+.cad_msg ion-icon {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+
+.cad_msg span {
+    text-align: center;
+    letter-spacing: 4px;
+    font-size: 1.2rem;
+}
